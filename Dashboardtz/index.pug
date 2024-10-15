@@ -1,0 +1,142 @@
+doctype doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/main.css")
+        title Customers
+
+    body
+        sidebar.navigation
+            .navigation__block
+                    a.navigation__main(href="#")
+                            img.main__logo(src="assets/img/logo.svg", alt="logo")
+                            span.main__title Dashboard
+                            span.navigation__version v.01
+                    nav.navigation__menu 
+                        a.navigation__link 
+                            .link__block
+                                img.link__img(src="assets/img/key-square.svg", alt="Key")
+                                span.link__name Dashboard
+                        a.navigation__link 
+                            .link__block
+                                img.link__img(src="assets/img/3d-square.svg", alt="box")
+                                span.link__name Product
+                            span.link__arrow 
+                        a.navigation__link.active__link
+                            .link__block
+                                img.link__img(src="assets/img/user-square.svg", alt="avatar")
+                                span.link__name Customers
+                            span.link__arrow 
+                        a.navigation__link 
+                            .link__block
+                                img.link__img(src="assets/img/wallet-money.svg", alt="cash")
+                                span.link__name Income
+                            span.link__arrow 
+                        a.navigation__link 
+                            .link__block
+                                img.link__img(src="assets/img/discount-shape.svg", alt="discount")
+                                span.link__name Promote
+                            span.link__arrow 
+                        a.navigation__link 
+                            .link__block
+                                img.link__img(src="assets/img/message-question.svg", alt="help")
+                                span.link__name Help
+                            span.link__arrow
+            .block__person
+                img.person__photo(src="assets/img/photo-person.jpg", alt="")
+                .person__container
+                    p.person__name Evano
+                    p.person__work Project Manager          
+        .container            
+            span.container__presents Hello Evano 👋🏼,
+            .container__box
+                .container__block
+                    .block__name
+                        span.block__function All Customers
+                        span.block__name--green Active Members
+
+                    .search-container
+                        input.search-input(type="text" placeholder="Search")
+                        .search-icon
+                            img(src="assets/img/search.svg", alt="Search Icon") 
+                table.table
+                    thead
+                        tr
+                            th.table__header Customer Name
+                            th.table__header Company
+                            th.table__header Phone Number
+                            th.table__header Email
+                            th.table__header Country
+                            th.table__header Status
+                    tbody
+                        tr.table__row
+                            td.table__cell Jane Cooper
+                            td.table__cell Microsoft
+                            td.table__cell (225) 555-0118
+                            td.table__cell jane@microsoft.com
+                            td.table__cell United States
+                            td.table__cell.table__status.table__status--active Active
+                        tr.table__row
+                            td.table__cell Floyd Miles
+                            td.table__cell Yahoo
+                            td.table__cell (205) 555-0100
+                            td.table__cell floyd@yahoo.com
+                            td.table__cell Kiribati
+                            td.table__cell.table__status.table__status--inactive Inactive
+                        tr.table__row
+                            td.table__cell Ronald Richards
+                            td.table__cell Adobe
+                            td.table__cell (302) 555-0107
+                            td.table__cell ronald@adobe.com
+                            td.table__cell Israel
+                            td.table__cell.table__status.table__status--inactive Inactive
+                        tr.table__row
+                            td.table__cell Marvin McKinney
+                            td.table__cell Tesla
+                            td.table__cell (252) 555-0126
+                            td.table__cell marvin@tesla.com
+                            td.table__cell Iran
+                            td.table__cell.table__status.table__status--inactive Inactive
+                        tr.table__row
+                            td.table__cell Jerome Bell
+                            td.table__cell Google
+                            td.table__cell (629) 555-0129
+                            td.table__cell jerome@google.com
+                            td.table__cell Réunion
+                            td.table__cell.table__status.table__status--active Active
+                        tr.table__row
+                            td.table__cell Kathryn Murphy
+                            td.table__cell Microsoft
+                            td.table__cell (406) 555-0120
+                            td.table__cell kathryn@microsoft.com
+                            td.table__cell Curaçao
+                            td.table__cell.table__status.table__status--active Active
+                        tr.table__row
+                            td.table__cell Jacob Jones
+                            td.table__cell Yahoo
+                            td.table__cell (208) 555-0112
+                            td.table__cell jacob@yahoo.com
+                            td.table__cell Brazil
+                            td.table__cell.table__status.table__status--active Active
+                        tr.table__row
+                            td.table__cell Kristin Watson
+                            td.table__cell Facebook
+                            td.table__cell (704) 555-0127
+                            td.table__cell kristin@facebook.com
+                            td.table__cell Áland Islands
+                            td.table__cell.table__status.table__status--inactive Inactive
+                .container__subblock
+                    p.subblock__date Showing data 1 to 8 of  256K entries
+                    .subblock__page 
+                        .page__button 
+                            img.page__arrow(src="assets/img/page-arrow.svg", alt="")
+
+                        .page__button.page__active 1
+                        .page__button 2
+                        .page__button 3
+                        .page__button 4
+                        span.page__other ...
+                        .page__button 40
+                        .page__button(style="rotate:180deg;") 
+                            img.page__arrow(src="assets/img/page-arrow.svg", alt="")    
